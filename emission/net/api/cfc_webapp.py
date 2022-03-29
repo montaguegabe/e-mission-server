@@ -63,7 +63,7 @@ config_file.close()
 static_path = config_data["paths"]["static_path"]
 python_path = config_data["paths"]["python_path"]
 server_host = config_data["server"]["host"]
-server_port = config_data["server"]["port"]
+server_port = os.environ["PORT"]
 socket_timeout = config_data["server"]["timeout"]
 log_base_dir = config_data["paths"]["log_base_dir"]
 auth_method = config_data["server"]["auth"]
